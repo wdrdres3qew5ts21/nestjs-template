@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta21
+kind: Config
+build:
+  artifacts:
+  - image: quay.io/linxianer12/nodejs-template
+    docker: {}
+  local:
+    push: false
+# deploy:
+#   kubectl:
+#     manifests:
+#       - manifests/*.yaml
+
+
